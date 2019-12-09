@@ -1,0 +1,17 @@
+{
+	"root": true,
+	"parserOptions": {
+		"ecmaFeatures": { "impliedStrict": true }
+	},
+	"env": {
+		"es6": true,
+		"node": true
+	},
+	"extends": "eslint:recommended",
+	"rules": {
+		"eqeqeq": ["error", "smart"],
+		"semi": "error",
+		"no-var": "error",
+		"prefer-const": "error"
+	}
+}

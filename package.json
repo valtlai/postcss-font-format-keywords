@@ -1,0 +1,37 @@
+{
+	"name": "postcss-font-format-keywords",
+	"version": "1.0.0",
+	"description": "Specify font formats as keywords in CSS",
+	"author": "Valtteri Laitinen <dev@valtlai.fi>",
+	"license": "MIT",
+	"repository": "https://github.com/valtlai/postcss-font-format-keywords",
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"scripts": {
+		"test": "eslint '**/*.js'"
+	},
+	"engines": {
+		"node": ">=12"
+	},
+	"dependencies": {
+		"postcss": "^7.0.24",
+		"postcss-value-parser": "^4.0.2"
+	},
+	"devDependencies": {
+		"eslint": "^6.7.2"
+	},
+	"keywords": [
+		"postcss-plugin",
+		"css",
+		"font-face",
+		"fonts",
+		"function",
+		"syntax",
+		"spec",
+		"specification",
+		"csswg",
+		"w3c"
+	]
+}
