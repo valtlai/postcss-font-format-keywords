@@ -2,28 +2,24 @@ const { name } = require('./package.json');
 const postcss = require('postcss');
 const valueParser = require('postcss-value-parser');
 
-const keywords = [
-	'woff',
-	'truetype',
-	'opentype',
-	'woff2',
-	'embedded-opentype',
-	'svg'
-];
+const re = {
+	rule: /^font-face$/i,
+	prop: /^src$/i,
+	func: /^format$/i,
+	keyw: /^(?:woff2?|truetype|(?:embedded-)?opentype|svg)$/i
+};
 
 module.exports = postcss.plugin(name, (opts = {}) => (
 	(root) => {
-		root.walkAtRules(/^font-face$/i, (rule) => {
-			rule.walkDecls(/^src$/i, (decl) => {
+		root.walkAtRules(re.rule, (rule) => {
+			rule.walkDecls(re.prop, (decl) => {
 				const val = valueParser(decl.value);
 
 				val.walk((node) => {
-					if (node.type !== 'function'
-						|| !/^format$/i.test(node.value)) return;
+					if (node.type !== 'function' || !re.func.test(node.value)) return;
 
 					node.nodes.forEach((child) => {
-						if (child.type !== 'word'
-							|| !keywords.includes(child.value.toLowerCase())) return;
+						if (child.type !== 'word' || !re.keyw.test(child.value)) return;
 
 						child.value = valueParser.stringify({
 							type: 'string',
