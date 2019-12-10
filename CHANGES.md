@@ -2,6 +2,12 @@
 
 (Dates use UTC.)
 
+## 1.0.2 (10 Dec 2019)
+
+* Refactor code
+* Meta: rename the changelog file
+* Meta: clarify the previous changelog item
+
 ## 1.0.1 (9 Dec 2019)
 
 * Meta: add license badge
