@@ -5,7 +5,7 @@
 ## 1.0.1 (9 Dec 2019)
 
 * Meta: add license badge
-* Meta: add more keywords
+* Meta: add more package keywords
 
 ## 1.0.0 (9 Dec 2019)
 
