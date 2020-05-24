@@ -1,3 +1,5 @@
+'use strict';
+
 const { name } = require('./package.json');
 const postcss = require('postcss');
 const valueParser = require('postcss-value-parser');

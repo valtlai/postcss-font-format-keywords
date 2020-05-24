@@ -20,6 +20,7 @@
 		"postcss-value-parser": "^4.0.2"
 	},
 	"devDependencies": {
+		"@valtlai/eslint-config": "^0.1.1",
 		"eslint": "^7.1.0"
 	},
 	"keywords": [
@@ -36,5 +37,13 @@
 		"specification",
 		"csswg",
 		"w3c"
-	]
+	],
+	"eslintConfig": {
+		"root": true,
+		"env": {
+			"es6": true,
+			"node": true
+		},
+		"extends": "@valtlai"
+	}
 }
