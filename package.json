@@ -5,7 +5,6 @@
 	"author": "Valtteri Laitinen <dev@valtlai.fi>",
 	"license": "MIT",
 	"repository": "https://github.com/valtlai/postcss-font-format-keywords",
-	"main": "index.js",
 	"files": [
 		"index.js"
 	],
