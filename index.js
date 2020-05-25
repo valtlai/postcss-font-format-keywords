@@ -11,8 +11,8 @@ const re = {
 	keyw: /^(?:woff2?|truetype|(?:embedded-)?opentype|svg)$/i
 };
 
-module.exports = postcss.plugin(name, (opts = {}) => (
-	(root) => {
+module.exports = postcss.plugin(name, (opts = {}) => {
+	return (root) => {
 		root.walkAtRules(re.rule, (rule) => {
 			rule.walkDecls(re.prop, (decl) => {
 				const val = valueParser(decl.value);
@@ -34,5 +34,5 @@ module.exports = postcss.plugin(name, (opts = {}) => (
 				decl.value = val.toString();
 			});
 		});
-	}
-));
+	};
+});
