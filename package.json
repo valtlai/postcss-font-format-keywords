@@ -17,8 +17,8 @@
 		"node": ">=12"
 	},
 	"dependencies": {
-		"postcss": "^7.0.24",
-		"postcss-value-parser": "^4.0.2"
+		"postcss": "^7.0.31",
+		"postcss-value-parser": "^4.1.0"
 	},
 	"devDependencies": {
 		"@valtlai/eslint-config": "^0.2.0",
