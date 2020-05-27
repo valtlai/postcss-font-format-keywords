@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+* Added tests
+* Updated the dependencies
+
 ## [1.0.3] (2020-05-25)
 * Updated changelog format
 * Updated the ESLint config
@@ -17,6 +21,7 @@
 ## [1.0.0] (2019-12-09)
 * Initial release
 
+[Unreleased]: https://github.com/valtlai/postcss-font-format-keywords/compare/1.0.3...HEAD
 [1.0.3]: https://github.com/valtlai/postcss-font-format-keywords/compare/1.0.2...1.0.3
 [1.0.2]: https://github.com/valtlai/postcss-font-format-keywords/compare/1.0.1...1.0.2
 [1.0.1]: https://github.com/valtlai/postcss-font-format-keywords/compare/1.0.0...1.0.1
