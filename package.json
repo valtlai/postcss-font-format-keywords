@@ -27,9 +27,7 @@
 	},
 	"eslintConfig": {
 		"root": true,
-		"ignorePatterns": [
-			"!.*"
-		],
+		"ignorePatterns": "!.*",
 		"env": {
 			"es6": true,
 			"node": true
