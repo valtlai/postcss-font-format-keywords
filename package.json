@@ -17,22 +17,20 @@
 		"node": ">=12"
 	},
 	"dependencies": {
-		"postcss": "^7.0.31",
+		"postcss": "^7.0.32",
 		"postcss-value-parser": "^4.1.0"
 	},
 	"devDependencies": {
-		"@valtlai/eslint-config": "^0.2.0",
-		"eslint": "^7.1.0",
+		"@valtlai/eslint-config": "^0.4.0",
+		"eslint": "^7.5.0",
 		"postcss-tape": "^5.0.2"
 	},
 	"eslintConfig": {
-		"root": true,
-		"ignorePatterns": "!.*",
+		"extends": "@valtlai",
 		"env": {
 			"es6": true,
 			"node": true
-		},
-		"extends": "@valtlai"
+		}
 	},
 	"keywords": [
 		"postcss-plugin",
