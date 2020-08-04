@@ -21,16 +21,18 @@
 		"postcss-value-parser": "^4.1.0"
 	},
 	"devDependencies": {
-		"@valtlai/eslint-config": "~0.6.0",
+		"@valtlai/eslint-config": "~0.7.0",
 		"eslint": "~7.6.0",
 		"eslint-plugin-unicorn": "~21.0.0",
 		"postcss-tape": "^5.0.2"
 	},
 	"eslintConfig": {
-		"extends": "@valtlai",
+		"extends": [
+			"@valtlai",
+			"@valtlai/eslint-config/node"
+		],
 		"env": {
-			"es6": true,
-			"node": true
+			"es6": true
 		}
 	},
 	"keywords": [
