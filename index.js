@@ -1,38 +1,49 @@
 'use strict';
 
-const { name } = require('./package.json');
-const postcss = require('postcss');
+const { name: postcssPlugin } = require('./package.json');
 const valueParser = require('postcss-value-parser');
 
-const re = {
-	rule: /^font-face$/i,
-	prop: /^src$/i,
-	func: /^format$/i,
-	keyw: /^(?:woff2?|truetype|(?:embedded-)?opentype|svg)$/i
-};
+const keywords = [
+	'woff',
+	'truetype',
+	'opentype',
+	'woff2',
+	'embedded-opentype',
+	'collection',
+	'svg'
+];
 
-module.exports = postcss.plugin(name, (opts = {}) => {
-	return (root) => {
-		root.walkAtRules(re.rule, (rule) => {
-			rule.walkDecls(re.prop, (decl) => {
-				const val = valueParser(decl.value);
+module.exports = (opts = {}) => {
+	return {
+		postcssPlugin,
+		AtRule: {
+			'font-face' (atRule) {
+				if (atRule.name !== 'font-face') return; // case-sensitive
 
-				val.walk((node) => {
-					if (node.type !== 'function' || !re.func.test(node.value)) return;
+				atRule.walkDecls('src', (decl) => {
+					if (!decl.value.includes('format(')) return; // skip useless parsing
 
-					node.nodes.forEach((child) => {
-						if (child.type !== 'word' || !re.keyw.test(child.value)) return;
+					const val = valueParser(decl.value);
 
-						child.value = valueParser.stringify({
-							type: 'string',
-							value: child.value,
-							quote: opts.singleQuote ? "'" : '"'
+					val.walk((node) => {
+						if (node.type !== 'function' || node.value !== 'format') return;
+
+						node.nodes.forEach((child) => {
+							if (child.type !== 'word' || !keywords.includes(child.value)) return;
+
+							child.value = valueParser.stringify({
+								type: 'string',
+								value: child.value,
+								quote: opts.singleQuote ? "'" : '"'
+							});
 						});
 					});
-				});
 
-				decl.value = val.toString();
-			});
-		});
+					decl.value = val.toString();
+				});
+			}
+		}
 	};
-});
+};
+
+module.exports.postcss = true;
