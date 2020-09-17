@@ -1,6 +1,11 @@
 # Changelog
 
-## [Unreleased]
+## [2.0.0] (2020-09-17)
+* [Breaking] Moved to PostCSS&nbsp;8
+* [Breaking] Removed support for non-lowercase identifiers
+* [Breaking] Moved `postcss` to the peer dependencies
+* [Breaking] Added support for Node&nbsp;10, removed from v13
+* Added the new `collection` format keyword
 * Added tests
 * Updated the dependencies
 
@@ -21,7 +26,7 @@
 ## [1.0.0] (2019-12-09)
 * Initial release
 
-[Unreleased]: https://github.com/valtlai/postcss-font-format-keywords/compare/1.0.3...HEAD
+[2.0.0]: https://github.com/valtlai/postcss-font-format-keywords/compare/1.0.3...2.0.0
 [1.0.3]: https://github.com/valtlai/postcss-font-format-keywords/compare/1.0.2...1.0.3
 [1.0.2]: https://github.com/valtlai/postcss-font-format-keywords/compare/1.0.1...1.0.2
 [1.0.1]: https://github.com/valtlai/postcss-font-format-keywords/compare/1.0.0...1.0.1
