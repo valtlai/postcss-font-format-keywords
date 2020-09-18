@@ -8,6 +8,6 @@ indent_size = 3
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[*.{md,yml}]
+[*.yml]
 indent_style = space
 indent_size = 2

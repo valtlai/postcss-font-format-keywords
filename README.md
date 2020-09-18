@@ -9,13 +9,13 @@ specification.
 
 ```css
 @font-face {
-  src: url(file.woff2) format(woff2);
+   src: url(file.woff2) format(woff2);
 }
 
 /* becomes */
 
 @font-face {
-  src: url(file.woff2) format("woff2");
+   src: url(file.woff2) format("woff2");
 }
 ```
 
@@ -48,6 +48,6 @@ Otherwise, double quotes are used.
 /* The output when { singleQuote: true } */
 
 @font-face {
-  src: url(file.woff2) format('woff2');
+   src: url(file.woff2) format('woff2');
 }
 ```
