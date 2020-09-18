@@ -24,10 +24,10 @@
 		"eslint-plugin-node": "~11.1.0",
 		"eslint-plugin-unicorn": "~21.0.0",
 		"jest": "^26.4.2",
-		"postcss": "^8.0.3"
+		"postcss": "^8.0.5"
 	},
 	"peerDependencies": {
-		"postcss": "^8.0.3"
+		"postcss": "^8.0.5"
 	},
 	"eslintConfig": {
 		"extends": [
