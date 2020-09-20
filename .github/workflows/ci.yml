@@ -11,12 +11,12 @@ jobs:
     strategy:
       matrix:
         os:
-          - key: Linux
-            label: ubuntu-latest
-          - key: Mac
-            label: macos-latest
-          - key: Windows
-            label: windows-latest
+          - label: Linux
+            key: ubuntu-latest
+          - label: Mac
+            key: macos-latest
+          - label: Windows
+            key: windows-latest
         node: [10, 12, 14]
     name: Node ${{ matrix.node }} on ${{ matrix.os.label }}
     runs-on: ${{ matrix.os.key }}
