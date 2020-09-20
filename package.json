@@ -9,7 +9,7 @@
 		"index.js"
 	],
 	"scripts": {
-		"test": "jest && eslint .",
+		"test": "ava && eslint .",
 		"reset": "rm -rf node_modules package-lock.json && npm i"
 	},
 	"engines": {
@@ -20,10 +20,10 @@
 	},
 	"devDependencies": {
 		"@valtlai/eslint-config": "~0.16.0",
+		"ava": "^3.12.1",
 		"eslint": "~7.9.0",
 		"eslint-plugin-node": "~11.1.0",
 		"eslint-plugin-unicorn": "~22.0.0",
-		"jest": "^26.4.2",
 		"postcss": "^8.0.5"
 	},
 	"peerDependencies": {
