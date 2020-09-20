@@ -19,10 +19,10 @@
 		"postcss-value-parser": "^4.1.0"
 	},
 	"devDependencies": {
-		"@valtlai/eslint-config": "~0.13.0",
+		"@valtlai/eslint-config": "~0.16.0",
 		"eslint": "~7.9.0",
 		"eslint-plugin-node": "~11.1.0",
-		"eslint-plugin-unicorn": "~21.0.0",
+		"eslint-plugin-unicorn": "~22.0.0",
 		"jest": "^26.4.2",
 		"postcss": "^8.0.5"
 	},
