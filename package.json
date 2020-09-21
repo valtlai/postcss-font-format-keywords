@@ -19,24 +19,21 @@
 		"postcss-value-parser": "^4.1.0"
 	},
 	"devDependencies": {
-		"@valtlai/eslint-config": "~0.16.0",
+		"@valtlai/eslint-config": "~0.17.0",
 		"ava": "^3.12.1",
 		"eslint": "~7.9.0",
 		"eslint-plugin-node": "~11.1.0",
 		"eslint-plugin-unicorn": "~22.0.0",
-		"postcss": "^8.0.5"
+		"postcss": "^8.0.6"
 	},
 	"peerDependencies": {
-		"postcss": "^8.0.5"
+		"postcss": "^8.0.6"
 	},
 	"eslintConfig": {
 		"extends": [
 			"@valtlai",
 			"@valtlai/eslint-config/node"
-		],
-		"env": {
-			"es6": true
-		}
+		]
 	},
 	"keywords": [
 		"postcss-plugin",
