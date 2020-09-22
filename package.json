@@ -19,7 +19,7 @@
 		"postcss-value-parser": "^4.1.0"
 	},
 	"devDependencies": {
-		"@valtlai/eslint-config": "~0.18.0",
+		"@valtlai/eslint-config": "~0.19.1",
 		"ava": "^3.12.1",
 		"eslint": "~7.9.0",
 		"eslint-plugin-node": "~11.1.0",
