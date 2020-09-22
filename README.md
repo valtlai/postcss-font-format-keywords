@@ -24,7 +24,7 @@ specification.
 Add the package in your project:
 
 ```sh
-npm install postcss postcss-font-format-keywords --save-dev
+npm install --save-dev postcss postcss-font-format-keywords
 ```
 
 Use it as a PostCSS plugin
