@@ -10,6 +10,7 @@
 	],
 	"scripts": {
 		"test": "ava && eslint .",
+		"prepare": "node publish",
 		"reset": "rm -rf node_modules package-lock.json && npm i"
 	},
 	"engines": {
