@@ -10,7 +10,7 @@
 	],
 	"scripts": {
 		"test": "ava && eslint .",
-		"prepublishOnly": "node publish",
+		"prepack": "node prepack",
 		"reset": "rm -rf node_modules package-lock.json && npm i"
 	},
 	"engines": {
