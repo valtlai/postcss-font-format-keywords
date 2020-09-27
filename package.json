@@ -20,16 +20,16 @@
 		"postcss-value-parser": "^4.1.0"
 	},
 	"devDependencies": {
-		"@valtlai/eslint-config": "~0.19.1",
+		"@valtlai/eslint-config": "~0.20.1",
 		"ava": "^3.12.1",
-		"eslint": "~7.9.0",
+		"eslint": "~7.10.0",
 		"eslint-plugin-node": "~11.1.0",
 		"eslint-plugin-unicorn": "~22.0.0",
-		"postcss": "^8.0.7",
+		"postcss": "^8.1.0",
 		"pre-commit": "^1.2.2"
 	},
 	"peerDependencies": {
-		"postcss": "^8.0.7"
+		"postcss": "^8.1.0"
 	},
 	"pre-commit": [
 		"test"
