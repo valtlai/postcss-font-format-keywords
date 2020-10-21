@@ -1,10 +1,6 @@
 name: Test
 
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+on: [push, pull_request]
 
 jobs:
   test:
@@ -17,7 +13,7 @@ jobs:
             key: macos-latest
           - label: Windows
             key: windows-latest
-        node: [10, 12, 14]
+        node: [10, 12, 14, 15]
     name: Node ${{ matrix.node }} on ${{ matrix.os.label }}
     runs-on: ${{ matrix.os.key }}
     steps:
