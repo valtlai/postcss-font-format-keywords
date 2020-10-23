@@ -10,8 +10,7 @@
 	],
 	"scripts": {
 		"test": "ava && eslint .",
-		"prepack": "node prepack",
-		"reset": "rm -rf node_modules package-lock.json && npm i"
+		"prepack": "node prepack"
 	},
 	"engines": {
 		"node": "^10 || ^12 || >=14"
