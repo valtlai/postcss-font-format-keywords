@@ -1,6 +1,6 @@
 {
 	"name": "postcss-font-format-keywords",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"description": "Specify font formats as keywords in CSS",
 	"author": "Valtteri Laitinen <dev@valtlai.fi>",
 	"license": "MIT",
