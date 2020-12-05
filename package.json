@@ -7,7 +7,9 @@
 	"repository": "valtlai/postcss-font-format-keywords",
 	"scripts": {
 		"test": "ava && eslint .",
-		"prepack": "node .prepack"
+		"prepack": "node .prepack",
+		"install": "husky install && husky add pre-commit 'npm test'",
+		"prepublishOnly": "pinst --disable"
 	},
 	"engines": {
 		"node": "^10 || ^12 || >=14"
@@ -21,16 +23,12 @@
 		"eslint": "~7.13.0",
 		"eslint-plugin-node": "~11.1.0",
 		"eslint-plugin-unicorn": "~23.0.0",
-		"husky": "^4.3.0",
+		"husky": "^5.0.4",
+		"pinst": "^2.1.1",
 		"postcss": "^8.1.7"
 	},
 	"peerDependencies": {
 		"postcss": "^8.0.0"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "npm test"
-		}
 	},
 	"eslintConfig": {
 		"extends": [

@@ -6,7 +6,6 @@ const packageJson = require('./package.json');
 const delKeys = [
 	'scripts',
 	'devDependencies',
-	'husky',
 	'eslintConfig'
 ];
 
