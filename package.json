@@ -18,14 +18,14 @@
 		"postcss-value-parser": "^4.1.0"
 	},
 	"devDependencies": {
-		"@valtlai/eslint-config": "~0.26.0",
+		"@valtlai/eslint-config": "~0.28.0",
 		"ava": "^3.13.0",
-		"eslint": "~7.13.0",
+		"eslint": "~7.15.0",
 		"eslint-plugin-node": "~11.1.0",
 		"eslint-plugin-unicorn": "~23.0.0",
 		"husky": "^5.0.4",
 		"pinst": "^2.1.1",
-		"postcss": "^8.1.7"
+		"postcss": "^8.1.14"
 	},
 	"peerDependencies": {
 		"postcss": "^8.0.0"
