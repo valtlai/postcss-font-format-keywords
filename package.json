@@ -8,7 +8,7 @@
 	"scripts": {
 		"test": "ava && eslint .",
 		"prepack": "node .prepack",
-		"install": "husky install && husky add pre-commit 'npm test'",
+		"install": "husky install",
 		"prepublishOnly": "pinst --disable"
 	},
 	"engines": {
