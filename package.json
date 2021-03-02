@@ -8,7 +8,7 @@
 	"scripts": {
 		"test": "ava && eslint .",
 		"prepack": "node .prepack",
-		"install": "husky install"
+		"prepare": "husky install"
 	},
 	"engines": {
 		"node": "^10 || ^12 || >=14"
@@ -17,13 +17,13 @@
 		"postcss-value-parser": "^4.1.0"
 	},
 	"devDependencies": {
-		"@valtlai/eslint-config": "~0.32.0",
+		"@valtlai/eslint-config": "~0.34.0",
 		"ava": "^3.15.0",
-		"eslint": "~7.19.0",
+		"eslint": "~7.21.0",
 		"eslint-plugin-node": "~11.1.0",
-		"eslint-plugin-unicorn": "~27.0.0",
-		"husky": "^5.0.8",
-		"postcss": "^8.2.4"
+		"eslint-plugin-unicorn": "~28.0.2",
+		"husky": "^5.1.3",
+		"postcss": "^8.2.6"
 	},
 	"peerDependencies": {
 		"postcss": "^8.0.0"
