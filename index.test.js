@@ -4,7 +4,7 @@ const test = require('ava');
 const postcss = require('postcss');
 const plugin = require('.');
 
-async function run (t, input, output, opts = {}) {
+async function run(t, input, output, opts = {}) {
 	const result = await postcss([plugin(opts)]).process(input, { from: null });
 	t.is(result.css, output);
 	t.is(result.warnings().length, 0);

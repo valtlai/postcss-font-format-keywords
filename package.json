@@ -16,13 +16,13 @@
 		"postcss-value-parser": "^4.1.0"
 	},
 	"devDependencies": {
-		"@valtlai/eslint-config": "~0.34.0",
+		"@valtlai/eslint-config": "~0.38.1",
 		"ava": "^3.15.0",
-		"eslint": "~7.21.0",
+		"eslint": "~7.25.0",
 		"eslint-plugin-node": "~11.1.0",
-		"eslint-plugin-unicorn": "~28.0.2",
-		"postcss": "^8.2.6",
-		"simple-git-hooks": "^2.0.1"
+		"eslint-plugin-unicorn": "~31.0.0",
+		"postcss": "^8.2.12",
+		"simple-git-hooks": "^2.3.1"
 	},
 	"peerDependencies": {
 		"postcss": "^8.0.0"

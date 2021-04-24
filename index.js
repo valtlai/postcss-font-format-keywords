@@ -17,7 +17,7 @@ module.exports = (opts = {}) => {
 	return {
 		postcssPlugin,
 		AtRule: {
-			'font-face' (atRule) {
+			'font-face'(atRule) {
 				if (atRule.name !== 'font-face') return; // case-sensitive
 
 				atRule.walkDecls('src', (decl) => {
