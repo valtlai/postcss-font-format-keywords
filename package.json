@@ -11,7 +11,7 @@
     "require": "./index.cjs"
   },
   "engines": {
-    "node": "^10.17 || ^12 || >=14"
+    "node": "^12 || ^14 || >=16"
   },
   "dependencies": {
     "postcss-value-parser": "^4.1.0"
