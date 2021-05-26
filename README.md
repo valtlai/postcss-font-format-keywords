@@ -22,7 +22,7 @@ specification.
 
 ```js
 import postcss from "https://deno.land/x/postcss@8.3.0/mod.js";
-import formatKeywords from "https://deno.land/x/postcss_font_format_keywords@1.0.0/mod.js";
+import formatKeywords from "https://deno.land/x/postcss_font_format_keywords@3.0.1/mod.js";
 
 await postcss([formatKeywords]).process(YOUR_CSS);
 ```
