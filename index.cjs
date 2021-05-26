@@ -1,4 +1,6 @@
-import valueParser from "postcss-value-parser";
+"use strict";
+
+const valueParser = require("postcss-value-parser");
 
 const keywords = [
   "woff",
@@ -47,4 +49,4 @@ function postcssFontFormatKeywords(opts = {}) {
 
 postcssFontFormatKeywords.postcss = true;
 
-export default postcssFontFormatKeywords;
+module.exports = postcssFontFormatKeywords;

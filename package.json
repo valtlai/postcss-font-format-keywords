@@ -5,6 +5,11 @@
   "author": "Valtteri Laitinen <dev@valtlai.fi>",
   "license": "MIT",
   "repository": "valtlai/postcss-font-format-keywords",
+  "type": "module",
+  "exports": {
+    "import": "./index.js",
+    "require": "./index.cjs"
+  },
   "engines": {
     "node": "^10.17 || ^12 || >=14"
   },
