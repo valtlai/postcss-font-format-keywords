@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.0.1] (2021-05-26)
+- Fixed readme
+
 ## [3.0.0] (2021-05-26)
 - BREAKING: dropped the support for Node.js 10 and 15
   (so Node.js 12, 14 and 16 or greater are now supported)
@@ -38,6 +41,7 @@
 ## [1.0.0] (2019-12-09)
 - Initial release
 
+[3.0.1]: https://github.com/valtlai/postcss-font-format-keywords/compare/3.0.0...3.0.1
 [3.0.0]: https://github.com/valtlai/postcss-font-format-keywords/compare/v2.0.2...3.0.0
 [2.0.2]: https://github.com/valtlai/postcss-font-format-keywords/compare/v2.0.1...v2.0.2
 [2.0.1]: https://github.com/valtlai/postcss-font-format-keywords/compare/2.0.0...v2.0.1
