@@ -1,54 +1,32 @@
 {
-	"name": "postcss-font-format-keywords",
-	"version": "2.0.2",
-	"description": "Specify font formats as keywords in CSS",
-	"author": "Valtteri Laitinen <dev@valtlai.fi>",
-	"license": "MIT",
-	"repository": "valtlai/postcss-font-format-keywords",
-	"scripts": {
-		"test": "ava && eslint .",
-		"prepack": "node .prepack"
-	},
-	"engines": {
-		"node": "^10.17 || ^12 || >=14"
-	},
-	"dependencies": {
-		"postcss-value-parser": "^4.1.0"
-	},
-	"devDependencies": {
-		"@valtlai/eslint-config": "~0.38.1",
-		"ava": "^3.15.0",
-		"eslint": "~7.25.0",
-		"eslint-plugin-node": "~11.1.0",
-		"eslint-plugin-unicorn": "~31.0.0",
-		"postcss": "^8.2.12",
-		"simple-git-hooks": "^2.3.1"
-	},
-	"peerDependencies": {
-		"postcss": "^8.0.0"
-	},
-	"simple-git-hooks": {
-		"pre-commit": "npm test"
-	},
-	"eslintConfig": {
-		"extends": [
-			"@valtlai",
-			"@valtlai/eslint-config/node"
-		]
-	},
-	"keywords": [
-		"postcss-plugin",
-		"css",
-		"font-face",
-		"fonts",
-		"keyword",
-		"function",
-		"syntax",
-		"syntactic sugar",
-		"polyfill",
-		"spec",
-		"specification",
-		"csswg",
-		"w3c"
-	]
+  "name": "postcss-font-format-keywords",
+  "version": "2.0.2",
+  "description": "Specify font formats as keywords in CSS",
+  "author": "Valtteri Laitinen <dev@valtlai.fi>",
+  "license": "MIT",
+  "repository": "valtlai/postcss-font-format-keywords",
+  "engines": {
+    "node": "^10.17 || ^12 || >=14"
+  },
+  "dependencies": {
+    "postcss-value-parser": "^4.1.0"
+  },
+  "peerDependencies": {
+    "postcss": "^8.0.0"
+  },
+  "keywords": [
+    "postcss-plugin",
+    "css",
+    "font-face",
+    "fonts",
+    "keyword",
+    "function",
+    "syntax",
+    "syntactic sugar",
+    "polyfill",
+    "spec",
+    "specification",
+    "csswg",
+    "w3c"
+  ]
 }
