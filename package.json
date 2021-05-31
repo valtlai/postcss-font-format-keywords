@@ -7,8 +7,11 @@
   "repository": "valtlai/postcss-font-format-keywords",
   "type": "module",
   "exports": {
-    "import": "./index.js",
-    "require": "./index.cjs"
+    "import": "./mod.js",
+    "require": "./mod.cjs"
+  },
+  "scripts": {
+    "prepack": "deno run --unstable --allow-read=. --allow-write=. .build.js"
   },
   "engines": {
     "node": "^12 || ^14 || >=16"
