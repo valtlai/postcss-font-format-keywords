@@ -20,6 +20,9 @@ specification.
 
 ### Deno
 
+Import the module from
+[deno.land/x](https://deno.land/x/postcss_font_format_keywords):
+
 ```js
 import postcss from "https://deno.land/x/postcss@8.3.0/mod.js";
 import formatKeywords from "https://deno.land/x/postcss_font_format_keywords@3.0.1/mod.js";
@@ -29,9 +32,14 @@ await postcss([formatKeywords]).process(YOUR_CSS);
 
 ### Node.js
 
+Install the
+[npm package](https://www.npmjs.com/package/postcss-font-format-keywords):
+
 ```sh
-$ npm install postcss-font-format-keywords
+npm install postcss-font-format-keywords
 ```
+
+Then import or require it:
 
 ```js
 import postcss from "postcss";
@@ -63,8 +71,3 @@ Example output:
   src: url(file.woff2) format('woff2');
 }
 ```
-
-## See also
-
-- [deno.land/x](https://deno.land/x/postcss_font_format_keywords)
-- [npm registry](https://www.npmjs.com/package/postcss-font-format-keywords)
