@@ -11,7 +11,7 @@
     "require": "./mod.cjs"
   },
   "scripts": {
-    "prepack": "deno run --unstable --allow-read=. --allow-write=. .build.js"
+    "prepack": "deno run --unstable --allow-read=. --allow-write=. https://raw.githubusercontent.com/valtlai/nodefy/2.0.0/do.js"
   },
   "engines": {
     "node": "^12 || ^14 || >=16"
