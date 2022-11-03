@@ -1,7 +1,7 @@
 # PostCSS Font Format Keywords [<img src="https://api.postcss.org/logo.svg" alt="PostCSS" width="90" height="90" align="right">](https://github.com/postcss/postcss)
 
 [![deno.land](https://deno.land/badge/postcss_font_format_keywords/version)](https://deno.land/x/postcss_font_format_keywords)
-[![NPM](https://img.shields.io/npm/v/postcss-font-format-keywords.svg)](https://www.npmjs.com/package/postcss-color-image)
+[![NPM](https://img.shields.io/npm/v/postcss-font-format-keywords.svg)](https://www.npmjs.com/package/postcss-font-format-keywords)
 [![License](https://img.shields.io/npm/l/postcss-font-format-keywords.svg)](LICENSE)
 
 This PostCSS plugin lets you specify font formats as keywords, following the
