@@ -11,7 +11,7 @@ const keywords = [
 	'svg',
 ];
 
-function postcssFontFormatKeywords(opts = {}) {
+function postcssFontFormatKeywords({ preserve = false } = {}) {
 	return {
 		postcssPlugin: 'postcss-font-format-keywords',
 		AtRule: {
@@ -39,7 +39,11 @@ function postcssFontFormatKeywords(opts = {}) {
 						});
 					});
 
-					decl.value = val.toString();
+					if (preserve) {
+						decl.cloneBefore({ value: val.toString() });
+					} else {
+						decl.value = val.toString();
+					}
 				});
 			},
 		},

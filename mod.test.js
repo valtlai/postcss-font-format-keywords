@@ -92,3 +92,12 @@ test(
 	'@font-face { src: format(baz) }',
 	'@font-face { src: format(baz) }',
 );
+
+// Options
+
+test(
+	'Keeps original declaration when { preserve: true }',
+	'@font-face { src: format(woff) }',
+	'@font-face { src: format("woff"); src: format(woff) }',
+	{ preserve: true },
+);

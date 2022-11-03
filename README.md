@@ -53,6 +53,17 @@ await postcss([formatKeywords]).process(YOUR_CSS);
 
 ## Options
 
+### `preserve: true`
+
+Keep the original CSS declaration alongside the transformed one.
+
+```css
+@font-face {
+	src: url(file.woff2) format("woff2");
+	src: url(file.woff2) format(woff2);
+}
+```
+
 ### singleQuote
 
 Double quotes are used by default.
