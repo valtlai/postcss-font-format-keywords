@@ -1,7 +1,5 @@
-// $ deno test --unstable --allow-env=NODE_ENV
-
-import { assertEquals } from 'https://deno.land/std@0.97.0/testing/asserts.ts';
-import postcss from 'https://deno.land/x/postcss@8.3.0/mod.js';
+import { assertEquals } from 'https://deno.land/std@0.161.0/testing/asserts.ts';
+import postcss from 'npm:postcss@8.4.18';
 import plugin from './mod.js';
 
 function test(name, input, expected, opts = {}) {

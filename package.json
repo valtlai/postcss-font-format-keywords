@@ -11,13 +11,13 @@
 		"require": "./mod.cjs"
 	},
 	"scripts": {
-		"prepack": "deno run --unstable --allow-read=. --allow-write=. https://raw.githubusercontent.com/valtlai/nodefy/2.0.0/do.js"
+		"prepack": "deno run --allow-read=. --allow-write=. https://raw.githubusercontent.com/valtlai/nodefy/3.1.0/do.js"
 	},
 	"engines": {
 		"node": "^12 || ^14 || >=16"
 	},
 	"dependencies": {
-		"postcss-value-parser": "^4.1.0"
+		"postcss-value-parser": "^4.2.0"
 	},
 	"peerDependencies": {
 		"postcss": "^8.0.0"

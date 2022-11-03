@@ -1,5 +1,5 @@
 // node(postcss-value-parser)
-import valueParser from 'https://deno.land/x/postcss_value_parser@v4.1.0/mod.js';
+import valueParser from 'https://deno.land/x/postcss_value_parser@4.2.0/mod.js';
 
 const keywords = [
 	'woff',

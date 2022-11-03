@@ -1,4 +1,7 @@
 {
+	"tasks": {
+		"test": "deno test --unstable --allow-env --allow-read"
+	},
 	"fmt": {
 		"options": {
 			"proseWrap": "preserve",
