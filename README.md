@@ -28,7 +28,7 @@ Import the module:
 
 ```js
 import postcss from 'npm:postcss';
-import formatKeywords from 'https://deno.land/x/postcss_font_format_keywords@3.0.1/mod.js';
+import formatKeywords from 'https://deno.land/x/postcss_font_format_keywords@4.0.0/mod.js';
 
 await postcss([formatKeywords]).process(YOUR_CSS);
 ```
