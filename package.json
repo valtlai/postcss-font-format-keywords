@@ -1,40 +1,40 @@
 {
-  "name": "postcss-font-format-keywords",
-  "version": "3.0.2",
-  "description": "Specify font formats as keywords in CSS",
-  "author": "Valtteri Laitinen <dev@valtlai.fi>",
-  "license": "ISC",
-  "repository": "valtlai/postcss-font-format-keywords",
-  "type": "module",
-  "exports": {
-    "import": "./mod.js",
-    "require": "./mod.cjs"
-  },
-  "scripts": {
-    "prepack": "deno run --unstable --allow-read=. --allow-write=. https://raw.githubusercontent.com/valtlai/nodefy/2.0.0/do.js"
-  },
-  "engines": {
-    "node": "^12 || ^14 || >=16"
-  },
-  "dependencies": {
-    "postcss-value-parser": "^4.1.0"
-  },
-  "peerDependencies": {
-    "postcss": "^8.0.0"
-  },
-  "keywords": [
-    "postcss-plugin",
-    "css",
-    "font-face",
-    "fonts",
-    "keyword",
-    "function",
-    "syntax",
-    "syntactic sugar",
-    "polyfill",
-    "spec",
-    "specification",
-    "csswg",
-    "w3c"
-  ]
+	"name": "postcss-font-format-keywords",
+	"version": "3.0.2",
+	"description": "Specify font formats as keywords in CSS",
+	"author": "Valtteri Laitinen <dev@valtlai.fi>",
+	"license": "ISC",
+	"repository": "valtlai/postcss-font-format-keywords",
+	"type": "module",
+	"exports": {
+		"import": "./mod.js",
+		"require": "./mod.cjs"
+	},
+	"scripts": {
+		"prepack": "deno run --unstable --allow-read=. --allow-write=. https://raw.githubusercontent.com/valtlai/nodefy/2.0.0/do.js"
+	},
+	"engines": {
+		"node": "^12 || ^14 || >=16"
+	},
+	"dependencies": {
+		"postcss-value-parser": "^4.1.0"
+	},
+	"peerDependencies": {
+		"postcss": "^8.0.0"
+	},
+	"keywords": [
+		"postcss-plugin",
+		"css",
+		"font-face",
+		"fonts",
+		"keyword",
+		"function",
+		"syntax",
+		"syntactic sugar",
+		"polyfill",
+		"spec",
+		"specification",
+		"csswg",
+		"w3c"
+	]
 }
