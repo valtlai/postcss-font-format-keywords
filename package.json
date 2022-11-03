@@ -3,7 +3,7 @@
   "version": "3.0.2",
   "description": "Specify font formats as keywords in CSS",
   "author": "Valtteri Laitinen <dev@valtlai.fi>",
-  "license": "MIT",
+  "license": "ISC",
   "repository": "valtlai/postcss-font-format-keywords",
   "type": "module",
   "exports": {
