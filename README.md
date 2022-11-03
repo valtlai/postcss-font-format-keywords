@@ -63,22 +63,3 @@ Keep the original CSS declaration alongside the transformed one.
 	src: url(file.woff2) format(woff2);
 }
 ```
-
-### singleQuote
-
-Double quotes are used by default.
-To output single quotes instead, set `singleQuote` to `true`:
-
-```js
-await postcss([
-	formatKeywords({ singleQuote: true }),
-]).process(YOUR_CSS);
-```
-
-Example output:
-
-```css
-@font-face {
-	src: url(file.woff2) format('woff2');
-}
-```

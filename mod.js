@@ -34,7 +34,7 @@ function postcssFontFormatKeywords({ preserve = false } = {}) {
 							child.value = valueParser.stringify({
 								type: 'string',
 								value: child.value,
-								quote: opts.singleQuote ? '\'' : '"',
+								quote: '"',
 							});
 						});
 					});

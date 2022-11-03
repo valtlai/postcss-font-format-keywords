@@ -19,13 +19,6 @@ test(
 );
 
 test(
-	'Converts valid keyword using single quotes',
-	'@font-face { src: format(woff) }',
-	'@font-face { src: format(\'woff\') }',
-	{ singleQuote: true },
-);
-
-test(
 	'Converts multiple valid keywords',
 	'@font-face { src: url(a) format(woff), url(b) format(svg) }',
 	'@font-face { src: url(a) format("woff"), url(b) format("svg") }',
