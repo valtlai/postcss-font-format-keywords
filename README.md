@@ -1,8 +1,6 @@
 # PostCSS Font Format Keywords [<img src="https://api.postcss.org/logo.svg" alt="PostCSS" width="90" height="90" align="right">](https://github.com/postcss/postcss)
 
-[![deno.land](https://deno.land/badge/postcss_font_format_keywords/version)](https://deno.land/x/postcss_font_format_keywords)
 [![NPM](https://img.shields.io/npm/v/postcss-font-format-keywords.svg)](https://www.npmjs.com/package/postcss-font-format-keywords)
-[![License](https://img.shields.io/npm/l/postcss-font-format-keywords.svg)](LICENSE)
 
 This PostCSS plugin lets you specify font formats as keywords, following the
 [CSS Fonts](https://drafts.csswg.org/css-fonts-4/#font-format-values)
@@ -20,28 +18,25 @@ specification.
 }
 ```
 
-## Usage
+> [!IMPORTANT]
+> ## ❌ Deprecated
+>
+> This module is deprecated and will not receive any updates anymore.
+> Please use
+> [@csstools/postcss-font-format-keywords](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-font-format-keywords#readme)
+> instead.
+>
+> ```
+> npm install @csstools/postcss-font-format-keywords
+> ```
 
-### Deno
+## Install
 
-Import the module:
-
-```js
-import postcss from 'npm:postcss';
-import formatKeywords from 'https://deno.land/x/postcss_font_format_keywords@4.0.1/mod.js';
-
-await postcss([formatKeywords]).process(YOUR_CSS);
 ```
-
-### Node.js
-
-Add the package in your project:
-
-```sh
 npm install postcss-font-format-keywords
 ```
 
-Then import or require it:
+## Usage
 
 ```js
 import postcss from 'postcss';

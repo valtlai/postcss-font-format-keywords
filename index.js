@@ -1,5 +1,6 @@
-// node(postcss-value-parser)
-import valueParser from 'https://deno.land/x/postcss_value_parser@4.2.0/mod.js';
+'use strict';
+
+const valueParser = require('postcss-value-parser');
 
 const keywords = [
 	'woff',
@@ -26,7 +27,7 @@ function postcssFontFormatKeywords({ preserve = false } = {}) {
 					val.walk((node) => {
 						if (node.type !== 'function' || node.value !== 'format') return;
 
-						node.nodes.forEach((child) => {
+						for (const child of node.nodes) {
 							if (child.type !== 'word' || !keywords.includes(child.value)) {
 								return;
 							}
@@ -36,7 +37,7 @@ function postcssFontFormatKeywords({ preserve = false } = {}) {
 								value: child.value,
 								quote: '"',
 							});
-						});
+						}
 					});
 
 					if (preserve) {
@@ -52,4 +53,4 @@ function postcssFontFormatKeywords({ preserve = false } = {}) {
 
 postcssFontFormatKeywords.postcss = true;
 
-export default postcssFontFormatKeywords;
+module.exports = postcssFontFormatKeywords;

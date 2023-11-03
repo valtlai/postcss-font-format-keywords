@@ -1,31 +1,34 @@
-import { assertEquals } from 'https://deno.land/std@0.161.0/testing/asserts.ts';
-import postcss from 'npm:postcss@8.4.18';
-import plugin from './mod.js';
+import assert from 'node:assert';
+import test from 'node:test';
+import postcss from 'postcss';
+import plugin from './index.js';
 
-function test(name, input, expected, opts = {}) {
-	Deno.test(name, async () => {
-		const result = await postcss([plugin(opts)]).process(input, { from: null });
-		assertEquals(result.css, expected);
-		assertEquals(result.warnings().length, 0);
+function runTest(name, input, expected, options = {}) {
+	test(name, async () => {
+		const result = await postcss([plugin(options)]).process(input, {
+			from: undefined,
+		});
+		assert.equal(result.css, expected);
+		assert.equal(result.warnings().length, 0);
 	});
 }
 
 // Valid keywords
 
-test(
-	'Converts valid keyword',
+runTest(
+	'converts valid keyword',
 	'@font-face { src: format(woff) }',
 	'@font-face { src: format("woff") }',
 );
 
-test(
-	'Converts multiple valid keywords',
+runTest(
+	'converts multiple valid keywords',
 	'@font-face { src: url(a) format(woff), url(b) format(svg) }',
 	'@font-face { src: url(a) format("woff"), url(b) format("svg") }',
 );
 
-test(
-	'Converts all valid keywords',
+runTest(
+	'converts all valid keywords',
 	`@font-face { src: format(woff), format(truetype), format(opentype),
 		format(woff2), format(embedded-opentype), format(collection),
 		format(svg) }`,
@@ -36,60 +39,60 @@ test(
 
 // Non-lowercase identifiers
 
-test(
-	'Ignores non-lowercase at-rule name',
+runTest(
+	'ignores non-lowercase at-rule name',
 	'@Font-face { src: format(woff) }',
 	'@Font-face { src: format(woff) }',
 );
 
-test(
-	'Ignores non-lowercase property name',
+runTest(
+	'ignores non-lowercase property name',
 	'@font-face { Src: format(woff) }',
 	'@font-face { Src: format(woff) }',
 );
 
-test(
-	'Ignores non-lowercase function name',
+runTest(
+	'ignores non-lowercase function name',
 	'@font-face { src: Format(woff) }',
 	'@font-face { src: Format(woff) }',
 );
 
-test(
-	'Ignores non-lowercase format keyword',
+runTest(
+	'ignores non-lowercase format keyword',
 	'@font-face { src: format(Woff) }',
 	'@font-face { src: format(Woff) }',
 );
 
 // Incorrect identifiers
 
-test(
-	'Ignores unrelated at-rule',
+runTest(
+	'ignores unrelated at-rule',
 	'@no-font-face { src: format(woff) }',
 	'@no-font-face { src: format(woff) }',
 );
 
-test(
-	'Ignores unrelated property',
+runTest(
+	'ignores unrelated property',
 	'@font-face { no-src: format(woff) }',
 	'@font-face { no-src: format(woff) }',
 );
 
-test(
-	'Ignores unrelated function',
+runTest(
+	'ignores unrelated function',
 	'@font-face { src: no-format(woff) }',
 	'@font-face { src: no-format(woff) }',
 );
 
-test(
-	'Ignores unknown format keyword',
+runTest(
+	'ignores unknown format keyword',
 	'@font-face { src: format(baz) }',
 	'@font-face { src: format(baz) }',
 );
 
 // Options
 
-test(
-	'Keeps original declaration when { preserve: true }',
+runTest(
+	'keeps original declaration when { preserve: true }',
 	'@font-face { src: format(woff) }',
 	'@font-face { src: format("woff"); src: format(woff) }',
 	{ preserve: true },

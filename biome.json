@@ -1,0 +1,18 @@
+{
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single"
+		}
+	},
+	"linter": {
+		"rules": {
+			"correctness": {
+				"noUndeclaredVariables": "error",
+				"noUnusedVariables": "error"
+			},
+			"suspicious": {
+				"noRedundantUseStrict": "off"
+			}
+		}
+	}
+}
